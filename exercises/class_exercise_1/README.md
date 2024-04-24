@@ -1,3 +1,5 @@
 # class_exercise_1
 
-A new Flutter project.
+Installing Flutter and to print "Hello World"
+
+Please check exercise_1.png for the result.

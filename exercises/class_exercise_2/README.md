@@ -1,3 +1,4 @@
 # class_exercise_2
 
-A new Flutter project.
+Implementing https://codelabs.developers.google.com/codelabs/flutter-codelab-first
+

@@ -1,3 +1,2 @@
 # class_exercise_6a
-
-A new Flutter project.
+Developed a 4-function calculator application using buttons for number inputs.

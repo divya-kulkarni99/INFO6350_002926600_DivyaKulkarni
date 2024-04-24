@@ -1,3 +1,3 @@
 # class_exercise_3
 
-A new Flutter project.
+Implementing https://docs.flutter.dev/ui/layout/tutorial
