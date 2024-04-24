@@ -1,47 +1,45 @@
-# final_project_garage_sale
+# HyperGarageSale
 
-Step # 1 : HyperGarageSale
-Start a new Flutter (Android/iOS) Application project and create you first activity with layout that allows user to enter Title, Price, Description in text format in three different text fields. Provide a button to allow user to Post a new classified.
+HyperGarageSale is a mobile application designed to facilitate selling items through garage sales. It's built using Flutter for cross-platform development and integrates with Firebase Firestore for real-time data management.
 
-Step # 2 : HyperGarageSale - Menus and Notifications
-(1) Add a SnackBar that comes up when a new post has been added.
+## Features
 
-(2) Add an Action Bar with a menu item to Post a new item. See this article for Action Bar tutorial.
+### Browse Post Activity
+- Displays all available listings in a ListView format
+- Shows essential information such as title, price, and a thumbnail image
+- Allows users to scroll through listings and browse various items
+- Includes a floating action button to navigate to the New Post Activity
 
-Step # 3 : BrowsePostActivity
-(1) Add a new widget/screen called BrowsePostsActivity.dart with Floating Action Button
+### New Post Activity
+- Enables users to create and post new products for sale
+- Features text fields for entering title, description, and price
+- Allows users to add up to four images using their device's camera
+- Submission of listings adds them to the Browse Post Activity
+- Confirmed using snackbar
 
-(2) Define BrowsePostsActivity as a parent activity of NewPostActivity.
+### Post Detail Activity
+- Opens when a user clicks on a specific item in the Browse Post Activity
+- Provides a detailed view of the selected listing
+- Displays a carousel of images, title, description, and price
+- Includes a back button for easy navigation to the Browse Post Activity
 
-(3) Implement ActionBar for BrowsePostsActivity.dart 
+## Firebase Integration
+- Utilizes Firebase Firestore for real-time data management
+- Stores and retrieves listings from the Firestore database
+- Employs Firebase Storage for efficient management of listing images
 
-(4) Add navigation route to navigate from BrowsePostsActivity.dart to NewPostActivity.dart when floating action button is pressed.
+## Getting Started
+To get started with HyperGarageSale, follow these steps:
+1. Clone the repository.
+2. Set up Firebase Firestore and Storage for your project.
+3. Configure Firebase credentials in your Flutter project.
+4. Run the application on your preferred platform (Android/iOS).
 
-(5) Update your application main entry point to use BrowsePostsActivity instead of NewPostActivity.
 
-Step # 4 : HyperGarageSale - ListView
-(1) Add a ListView to BrowsePosts screen
+## HyperGarageSale Application video -Android emulator
+https://github.com/divya-kulkarni99/INFO6350_002926600_DivyaKulkarni/assets/103066357/18a4cf09-35ea-45ec-94b3-edb122b4b89a
 
-(2) Create a database to hold new posts data
+## HyperGarageSale Application video -iOS simulator
+https://github.com/divya-kulkarni99/INFO6350_002926600_DivyaKulkarni/assets/103066357/76db00f6-8719-432f-9b84-69a2cd816179
 
-(3) Integrate ListView and corresponding adapter with database to store new posts
 
-Step # 5 : HyperGarageSale - Camera Interactions
-With each new post, allow user to take up to 4 images and attach them
-
-Application may display thumbnails of those images on the new post form for user to preview them
-
-When user will click on a given post on the ListView, open the post detail view
-
-Display post details and associated thumbnails 
-
-When clicked on thumbnail, display full-screen image with back navigation arrow
-
-Step # 6 : HyperGarageSale - Firebase Integration
-Integrate HyperGarageSale application with Firebase Services for the following
-
-Authentication
-
-Real-time database (Firestore)
-
-Storing and retrieving image files (Storage)
